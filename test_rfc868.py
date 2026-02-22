@@ -11,7 +11,7 @@ import time
 # 两者相差 2208988800 秒
 TIME_OFFSET = 2208988800
 
-def test_rfc868_server(host='localhost', port=37):
+def test_rfc868_server(host='localhost', port=3037):
     """测试 RFC 868 服务器"""
     print(f"连接到 RFC 868 服务器 {host}:{port}...")
     
