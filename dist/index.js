@@ -1,7 +1,7 @@
 import net from 'net';
 // 端口 37 是特权端口，需要管理员权限
-// 使用非特权端口 3037 进行测试
-const RFC868_PORT = 3037;
+// 使用非特权端口 37 进行测试
+const RFC868_PORT = 37;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 // RFC 868 时间从 1900-01-01 开始，而 Unix 时间从 1970-01-01 开始
 // 两者相差 2208988800 秒

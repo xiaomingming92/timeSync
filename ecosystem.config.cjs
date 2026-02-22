@@ -3,6 +3,7 @@ module.exports = {
     {
       name: 'ndate-service',
       script: './dist/index.js',
+      exec_interpreter: '/home/xmm/.volta/tools/image/node/24.11.0/bin/node',
       instances: 1,
       autorestart: true,
       watch: false,
