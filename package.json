@@ -8,7 +8,7 @@
     "dev": "set NODE_ENV=development && tsx watch src/index.ts",
     "build": "set NODE_ENV=production && tsc",
     "start": "set NODE_ENV=production && node dist/index.js",
-    "pm2start": "pm2 start ecosystem.config.js --env production"
+    "pm2start": "pm2 start ecosystem.config.cjs --env production"
   },
   "keywords": [
     "time",
