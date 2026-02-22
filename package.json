@@ -1,26 +1,26 @@
 {
-  "name": "timesync",
-  "version": "0.1.0",
-  "private": true,
+  "name": "ndate-service",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "nDate time synchronization service (RFC 868)",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "set NODE_ENV=development && tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "set NODE_ENV=production && node dist/index.js"
   },
-  "dependencies": {
-    "next": "16.1.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
-  },
+  "keywords": [
+    "time",
+    "synchronization",
+    "ndate",
+    "rfc868"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.1.6",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@types/node": "^20.11.30",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
   }
 }
