@@ -1,7 +1,7 @@
 import net from 'net';
 
-// 端口 37 是特权端口，需要管理员权限
-// 使用非特权端口 37 进行测试
+// 端口 37 是 RFC 868 标准规定的时间同步服务端口
+// 这是行业规范，必须使用端口 37
 const RFC868_PORT = 37;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
